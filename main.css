@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: red;
+}
+
+h1 {
+    z-index: 10;
+    color: #ffffff;
+    position: relative;
+    font-size: 2.6rem;
+    text-align: center;
+    padding: 0px 10px;
+    margin-top: 30px;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.heart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 450px;
+    border-radius: 20px;
+}
+
+.serduszko {
+    width: 80%;
+    height: 80%;
+    background-image: url(./img/walentynka2.jpg);
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    animation: heartBeat 5s infinite;
+}
+
+@keyframes heartBeat {
+    from {
+        transform: scale(0.2);
+    }
+    to {
+        transform: scale(1.6);
+    }
+}
+
+@media screen and (max-width: 1400px) {}
+
+@keyframes heartBeatClose {
+    from {
+        transform: scale(0.9);
+        transition: all 3s;
+    }
+    to {
+        transform: scale(0.6);
+        transition: all 3s;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+    .heart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 450px;
+    }
+    .serduszko {
+        width: 80%;
+        height: 50%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+    }
+}
+
+
+/* Na samsung Fold */
+
+@media screen and (max-width: 400px) {}
+
+@media screen and (width: 280px) {}
+
+
+/* Koniec samsung fold */
